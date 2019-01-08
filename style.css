@@ -21,3 +21,30 @@ a:hover {
    text-decoration: underline;
 
 }
+
+.google {
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+
+}
+
+.logo {
+	margin-top:100px;
+}
+
+.recherche {
+	margin-top:30px;
+	border: solid 1px #3e3e3e;
+	padding:5px;
+}
+
+input {
+	width:500px;
+	border:none;
+}
+
+.micro {
+    height: 24px;
+    width: 24px;
+}
