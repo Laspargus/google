@@ -8,35 +8,27 @@ body {
 	font-size:13px;
 }
 
+.btn-connexion, .btn-google  {
+	padding: 10px;
+	border-radius: 2px;
+	font-weight: bold;
+	font-size: 13px;
+}
+
+li a img {
+    width: 17px;
+}
+
+
+/* ================================
+				HEADER
+ ==================================*/
+
 header {
     margin:10px;
     align-self : flex-end;
 
 }
-
-
-footer {
-    
-    background: #f2f2f2;
-    border-top: 1px solid #e4e4e4;
-    line-height: 40px;
-    min-width: 980px;
-    bottom:0;
-    position : absolute;
-    width:100%;
-    
-}
-
-
-section {
-	display:flex;
-	flex-direction: column;
-    justify-content : space-between;
-    align-items:center;
-    flex:2;
-    text-align:center;
-}
-
 
 
 
@@ -58,50 +50,45 @@ nav li a
 	color : rgba(0,0,0,0.87);
 }
 
-.lesbouttons a {
-	text-decoration : none;
-}
-
-.footer-line ul li a {
-	text-decoration : none;
-	color : #5F6368;
-}
-
 nav li a:hover {
    opacity: .85;
    text-decoration: underline;
 
 }
 
-
 .btn-connexion {
 	background: #4285f4;
 	color : #ffffff;  
 }
 
-.btn-google {
-	background-color: #f2f2f2;
-    color: #757575;
+
+
+/* ================================
+		SECTION PRINCIPALE
+ ==================================*/
+
+
+
+section {
+	display:flex;
+	flex-direction: column;
+    justify-content : space-between;
+    align-items:center;
+    flex:2;
+    text-align:center;
 }
 
-.btn-connexion, .btn-google  {
-	padding: 10px;
-	border-radius: 2px;
-	font-weight: bold;
-	font-size: 13px;
-}
-
-.btn-google:hover {
-	background-color: #f8f8f8;     
-   border: 1px solid #c6c6c6;  
-   box-shadow: 0 1px 1px rgba(0,0,0,0.1);   
-   color: #222;
-}
-
+/* --------------------------------
+				LOGO 
+----------------------------------*/
 
 .logo {
 	margin-top:100px;
 }
+
+/* --------------------------------
+		BARRE DE RECHERCHE
+----------------------------------*/
 
 .recherche {
 	margin-top:30px;
@@ -121,10 +108,6 @@ div.recherche:hover {
 	box-shadow: 0 3px 8px 0 rgba(0,0,0,0.2), 0 0 0 1px rgba(0,0,0,0.08);
 }
 
-li a img {
-    width: 17px;
-}
-
 input {
 	width:500px;
 	border:none;
@@ -134,16 +117,99 @@ input:focus {
 	outline:none;
 }
 
+
+
 .micro {
     height: 24px;
     width: 24px;
 }
 
+/* --------------------------------
+			INFOBULLE
+----------------------------------*/
 
 
-.lesbouttons {
+.tooltip{
+	display: inline;
+	position: relative;
+	}
+
+	.tooltip:hover:after{
+	background: #333;
+	background: rgba(0,0,0,.8);
+	bottom: 26px;
+	color: #fff;
+	content: attr(title);
+	left: 20%;
+	padding: 5px 15px;
+	position: absolute;
+	z-index: 98;
+	width: 220px;
+	}
+	
+	.tooltip:hover:before{
+	border: solid;
+	border-color: #333 transparent;
+	border-width: 6px 6px 0 6px;
+	bottom: 20px;
+	content: "";
+	left: 50%;
+	position: absolute;
+	z-index: 99;
+	}
+
+
+/* --------------------------------
+		BOUTONS PRINCIPAUX
+----------------------------------*/
+
+
+.btn-google {
+	background-color: #f2f2f2;
+    color: #757575;
+}
+
+
+.btn-google:hover {
+	background-color: #f8f8f8;     
+   border: 1px solid #c6c6c6;  
+   box-shadow: 0 1px 1px rgba(0,0,0,0.1);   
+   color: #222;
+}
+
+.main-buttons {
 	margin-top:50px;
 }
+
+.main-buttons a {
+	text-decoration : none;
+}
+
+
+
+/* ================================
+				FOOTER
+ ==================================*/
+
+footer {
+    
+    background: #f2f2f2;
+    border-top: 1px solid #e4e4e4;
+    line-height: 40px;
+    min-width: 980px;
+    bottom:0;
+    position : absolute;
+    width:100%;
+    
+}
+
+
+
+.footer-line ul li a {
+	text-decoration : none;
+	color : #5F6368;
+}
+
 
 .footer-line {
 	background-color: #f2f2f2;
@@ -181,33 +247,5 @@ input:focus {
 }
 
 
-/* INFOBULLE */
-.tooltip{
-	display: inline;
-	position: relative;
-	}
 
-	.tooltip:hover:after{
-	background: #333;
-	background: rgba(0,0,0,.8);
-	bottom: 26px;
-	color: #fff;
-	content: attr(title);
-	left: 20%;
-	padding: 5px 15px;
-	position: absolute;
-	z-index: 98;
-	width: 220px;
-	}
-	
-	.tooltip:hover:before{
-	border: solid;
-	border-color: #333 transparent;
-	border-width: 6px 6px 0 6px;
-	bottom: 20px;
-	content: "";
-	left: 50%;
-	position: absolute;
-	z-index: 99;
-	}
 	
