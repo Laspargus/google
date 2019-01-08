@@ -75,3 +75,21 @@ input:focus {
 .lesbouttons {
 	margin-top:50px;
 }
+
+.footer-line {
+	background-color: #f2f2f2;
+	border-top: 1px solid #E4E4E4;
+	height : 40px;
+	margin
+}
+
+footer {
+
+}
+
+
+body {
+display: flex;
+flex-direction: column;
+align-content: space-between; 
+}
